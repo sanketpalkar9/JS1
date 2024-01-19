@@ -170,7 +170,7 @@ console.log(arr);
 console.log(arr[2][3]);
 //Result is 8;
 
-*/
+
 
 
 const fruits = [
@@ -181,7 +181,7 @@ const fruits = [
     "pineapple"
 ]
 console.log(fruits);
-fruits.push("Banana");      // Push in the last element
+fruits.push("Banana");      // Push in the last element also returns length of the new array
 console.log(fruits);
 fruits.pop();             // Pops last element here banana
 console.log(fruits);
@@ -189,3 +189,46 @@ fruits.shift();           // Removes first element here apples
 console.log(fruits);
 console.log(fruits.shift())   // Returns first element
 
+fruits.unshift("Oranges");      // adds new element to the start
+console.log(fruits);
+console.log(fruits.unshift("fbdvksb")); //also returns length of new array 
+
+const newfruits = [
+    "fruit1",
+    "fruit2",
+    "fruit3",
+    "fruit4"
+]
+
+const allFruits = fruits.concat(newfruits);     // Joins two arrays in the order and also returns length of new array
+console.log(allFruits);
+console.log(fruits.concat(newfruits));
+
+
+const pl = [
+    "c",
+    "javascript",
+    "golang",
+    "java",
+    "python",
+    "c++"
+]
+
+
+// console.log(pl.includes("golang"));      // Returns true if element is present in the array
+
+// console.log(pl.join("-"));       // Returns c-javascript-golang-java-python-c++
+
+console.log(pl);
+console.log(pl.reverse());
+console.log(pl.slice(0,2));     // [0,1)
+
+const numbers = [4, 5, 6, 7, 23, 34];
+
+console.log(numbers.sort());   // Sorts the array in ascending order it only compares first digit
+
+console.log(numbers.sort(function(a,b){return a-b}));   // Sorts the array in ascending order
+
+console.log(numbers.sort(function(a,b){return b-a}));   // Sorts the array in descending order
+
+*/

@@ -1,1 +1,1 @@
-![Methods of string like push pop shift etc...](image.png)
+![Methods of array like push pop shift etc...](image.png)
